@@ -32,7 +32,7 @@ class PdfMinerApp:
         self.lbl_dir = tk.Label(root, text="Nincs mappa kiválasztva.", fg="gray")
         self.lbl_dir.pack()
 
-        # Indítás gomb
+        
         self.btn_start = tk.Button(root, text="3. Mélyfúrás Indítása", command=self.start_mining, width=30, bg="green", fg="white", font=("Arial", 10, "bold"))
         self.btn_start.pack(pady=20)
 
