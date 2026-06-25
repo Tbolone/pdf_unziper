@@ -33,7 +33,7 @@ class PdfMinerApp:
         self.lbl_dir.pack()
 
         
-        self.btn_start = tk.Button(root, text="3. Mélyfúrás Indítása", command=self.start_mining, width=30, bg="green", fg="white", font=("Arial", 10, "bold"))
+        self.btn_start = tk.Button(root, text="3. Kicsomagolás Indítása.", command=self.start_mining, width=30, bg="green", fg="white", font=("Arial", 10, "bold"))
         self.btn_start.pack(pady=20)
 
         # Eredmény log
@@ -106,7 +106,7 @@ class PdfMinerApp:
         self.lbl_status.config(text=f"KÉSZ! Összesen {total_found} db ZIP fájl kibányászva.", fg="green")
         
         # Sikeres üzenet és mappa megnyitása
-        messagebox.showinfo("Befejezve", f"A művelet befejeződött!\nÖsszesen {total_found} db fájl lett kibányászva.")
+        messagebox.showinfo("Befejezve", f"A művelet befejeződött!\nÖsszesen {total_found} db fájl lett kicsomagolva.")
         self.open_directory(self.output_dir)
 
 if __name__ == "__main__":
