@@ -2,7 +2,7 @@ name: Build Windows EXE
 
 on:
   push:
-    branches: [ "main" ] # Vagy "master", ha az az alapértelmezett ágad
+    branches: [ "main" ]
 
 jobs:
   build:
